@@ -2,7 +2,7 @@
     //register service worker
     if(!navigator.serviceWorker) return;
 
-    navigator.serviceWorker.register('/Currency-Converter/sw.js', { scope: '/index.html/' }).then(function(){
+    navigator.serviceWorker.register('/Currency-Converter/sw.js', { scope: '/Currency-Converter/index.html/' }).then(function(){
         console.log('Registered');
     }).catch(function () {
        console.log('Registration failed'); 

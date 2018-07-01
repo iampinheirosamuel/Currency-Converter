@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>  
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="app">
+            
+
+            <div class="top">
+               <h6>Currency Converter</h6>
+               <br>
+                <div class="convert_f">
+                    <input type="number" id="f_amount" name="f_curr" placeholder="Enter amount" required>
+                    <select id="c_from" name="country_curr">             
+                </select>
+                </div>
+                <div>
+                    <button id="convert">Convert</button>
+                </div>
+            </div>
+            <div class="bottom">
+                
+                <div class="convert_t">
+                    <input disabled type="number" id="result" name="t_curr" placeholder="" required>
+                    <select id="c_to" name="country_curr">
+                </select>
+                </div>
+
+            </div>
+
+           
+           
+           
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="/sw.js"></script> -->
+</body>
+
+</html>

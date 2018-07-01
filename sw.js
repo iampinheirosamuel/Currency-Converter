@@ -6,11 +6,11 @@ self.addEventListener('install', function(event){
    event.waitUntil(
       caches.open(staticCacheName).then(function(cache){
            return cache.addAll([
-               '/',
-               'js/script.js',
-               'js/jquery.min.js',
-               'css/style.css',
-               'images/bg-panel3.png',
+               '/Currency-Converter',
+               '/Currency-Converter/js/script.js',
+               '/Currency-Converter/js/jquery.min.js',
+               '/Currency-Converter/css/style.css',
+               '/Currency-Converter/images/bg-panel3.png',
                'https://free.currencyconverterapi.com/api/v5/currencies'
 
            ]);

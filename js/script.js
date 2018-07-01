@@ -2,7 +2,7 @@
     //register service worker
     if(!navigator.serviceWorker) return;
 
-    navigator.serviceWorker.register('/sw.js').then(function(){
+    navigator.serviceWorker.register('/sw.js', { scope: '/index.html/' }).then(function(){
         console.log('Registered');
     }).catch(function () {
        console.log('Registration failed'); 
